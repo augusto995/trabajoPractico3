@@ -64,10 +64,10 @@ let celsius = Number(prompt("Ingrese grados celsius para convertir a Fahrenheit"
 const  convertirCelsiusAFahrenheit = (c) => c*1.8+32;
 let fahrenheit =convertirCelsiusAFahrenheit(celsius)
 console.log(`${celsius} °C son equivalentes a ${fahrenheit}°F`)
-*/
+
 
 //5 Objetos en javascript
-
+//Ejercicio 1
 const persona = {
     nombre: "Augusto",
     edad: "20",
@@ -85,3 +85,22 @@ persona.mostrarPropiedades();
 persona.cambiarCiudad("Bs As")
 persona.mostrarPropiedades();
 
+
+//Ejercicio 2
+const libro ={
+    titulo: "El extranjero",
+    autor: "Albert Camus",
+    año: 2013,
+    libroAntiguo: function (){
+        if ( 2024 - this.año > 10) {
+            console.log(`El libro ${this.titulo} es antiguo: true`)
+        } else {
+            console.log(`El libro ${this.titulo} es antiguo: false`)
+        }
+    }
+}
+libro.libroAntiguo();
+*/
+
+//Arrays
+//Ejercicio 1
