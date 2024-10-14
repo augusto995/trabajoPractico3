@@ -44,3 +44,21 @@ do {
     numeroMayorACien = prompt("Ingrese un numero mayor a cien")
 } while (numeroMayorACien <= 100);
 console.log(`Ingresaste un numero mayor a 100: ${numeroMayorACien}`)
+//4 Funciones de JavaScript
+//Ejercicio 1
+
+let numParOImpar = Number(prompt("Ingrese un numero para saber si es par o impar"))
+function esPar(n){
+    if(n % 2 === 0){
+    return true
+    } else {
+        return false
+    }
+}
+if(esPar(numParOImpar)){
+    console.log(`El numero ${numParOImpar} es par: true`)
+} else{
+    console.log(`El numero ${numParOImpar} es par: false`)
+}
+
+//Ejercicio 2
