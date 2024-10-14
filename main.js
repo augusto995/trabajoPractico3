@@ -11,12 +11,18 @@ console.log(`Hola ${nombre}, bienvenido a la aplicacion`)
 //Operadores logicos y condicionales
 //Ejercicio 1
 if(a>b){
-    c = b;
+    c = a;
     console.log(`El mayor de los tres numeros es: ${c}`);
 } else if(b>a) {
-    c = a;
+    c = b;
     console.log(`El mayor de los tres numeros es: ${c}`);
 } else{
     console.log("Ambos niemeros son iguales");
 }
 
+let numeroIngresado = prompt("Ingresar un numero para saber ses par o impar: ")
+if (numeroIngresado % 2 === 0) {
+    console.log(`El numero ${numeroIngresado} es par.`);
+  } else {
+    console.log(`El numero ${numeroIngresado} es impar.`);
+  }
