@@ -8,7 +8,7 @@ console.log(c);
 let nombre = prompt("Ingresa tu nombre");
 console.log(`Hola ${nombre}, bienvenido a la aplicacion`)
 
-//Operadores logicos y condicionales
+//2 Operadores logicos y condicionales
 //Ejercicio 1
 if(a>b){
     c = a;
@@ -19,6 +19,7 @@ if(a>b){
 } else{
     console.log("Ambos niemeros son iguales");
 }
+//Ejercicio 2
 
 let numeroIngresado = prompt("Ingresar un numero para saber ses par o impar: ")
 if (numeroIngresado % 2 === 0) {
@@ -26,3 +27,12 @@ if (numeroIngresado % 2 === 0) {
   } else {
     console.log(`El numero ${numeroIngresado} es impar.`);
   }
+
+//3 Operadores de asignacion y bucles
+//Ejercicio 1
+let i = 10;
+console.log("Ejercicio 3");
+while (i > 0) {
+    console.log(i);
+    i -=1;
+}
