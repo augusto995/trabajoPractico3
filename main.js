@@ -1,3 +1,4 @@
+/* 
 //Ejercicio 2
 let a = 5;
 let b = 10;
@@ -48,17 +49,16 @@ console.log(`Ingresaste un numero mayor a 100: ${numeroMayorACien}`)
 //Ejercicio 1
 
 let numParOImpar = Number(prompt("Ingrese un numero para saber si es par o impar"))
-function esPar(n){
-    if(n % 2 === 0){
-    return true
-    } else {
-        return false
-    }
-}
+const  esPar = (n) => n % 2 === 0;
+
 if(esPar(numParOImpar)){
     console.log(`El numero ${numParOImpar} es par: true`)
 } else{
     console.log(`El numero ${numParOImpar} es par: false`)
 }
-
+*/
 //Ejercicio 2
+let celsius = Number(prompt("Ingrese grados celsius para convertir a Fahrenheit"))
+const  convertirCelsiusAFahrenheit = (c) => c*1.8+32;
+let fahrenheit =convertirCelsiusAFahrenheit(celsius)
+console.log(`${celsius} °C son equivalentes a ${fahrenheit}°F`)
