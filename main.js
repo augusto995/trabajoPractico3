@@ -100,7 +100,15 @@ const libro ={
     }
 }
 libro.libroAntiguo();
-*/
+
 
 //Arrays
 //Ejercicio 1
+
+let numeros = [1,2,3,4,5,6,7,8,9,10]
+let numeros2 = numeros.map( n => n*2)
+console.log(`Numeros originales: ${numeros}`)
+console.log(`Numeros multiplicados por 2: ${numeros2}`)
+*/
+
+//
