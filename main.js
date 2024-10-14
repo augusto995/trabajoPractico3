@@ -17,5 +17,6 @@ if(a>b){
     c = a;
     console.log(`El mayor de los tres numeros es: ${c}`);
 } else{
-    console.log("Ambos niemeros son iguales"):
+    console.log("Ambos niemeros son iguales");
 }
+
