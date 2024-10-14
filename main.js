@@ -36,3 +36,11 @@ while (i > 0) {
     console.log(i);
     i -=1;
 }
+
+//Ejercicio 2
+
+let numeroMayorACien;
+do {
+    numeroMayorACien = prompt("Ingrese un numero mayor a cien")
+} while (numeroMayorACien <= 100);
+console.log(`Ingresaste un numero mayor a 100: ${numeroMayorACien}`)
