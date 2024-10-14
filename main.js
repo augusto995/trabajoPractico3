@@ -1,4 +1,6 @@
 /* 
+
+//1 Introduccion a javascript
 //Ejercicio 2
 let a = 5;
 let b = 10;
@@ -56,9 +58,30 @@ if(esPar(numParOImpar)){
 } else{
     console.log(`El numero ${numParOImpar} es par: false`)
 }
-*/
+
 //Ejercicio 2
 let celsius = Number(prompt("Ingrese grados celsius para convertir a Fahrenheit"))
 const  convertirCelsiusAFahrenheit = (c) => c*1.8+32;
 let fahrenheit =convertirCelsiusAFahrenheit(celsius)
 console.log(`${celsius} °C son equivalentes a ${fahrenheit}°F`)
+*/
+
+//5 Objetos en javascript
+
+const persona = {
+    nombre: "Augusto",
+    edad: "20",
+    ciudad: "Mendoza",
+
+    cambiarCiudad: function(nuevaCiudad){
+        this.ciudad = nuevaCiudad;
+    },
+    mostrarPropiedades: function(){
+        console.log(`Persona: ${this.nombre},Edad: ${this.edad}, Ciudad: ${this.ciudad}`)
+    }
+}
+
+persona.mostrarPropiedades();
+persona.cambiarCiudad("Bs As")
+persona.mostrarPropiedades();
+
