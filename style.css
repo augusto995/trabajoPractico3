@@ -1,0 +1,5 @@
+input:disabled {
+    background-color: #f0f0f0; /* Color de fondo cuando está deshabilitado */
+    color: #999; /* Color del texto cuando está deshabilitado */
+    cursor: not-allowed; /* Cambiar el cursor */
+}

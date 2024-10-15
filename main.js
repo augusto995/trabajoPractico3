@@ -109,7 +109,7 @@ let numeros = [1,2,3,4,5,6,7,8,9,10]
 let numeros2 = numeros.map( n => n*2)
 console.log(`Numeros originales: ${numeros}`)
 console.log(`Numeros multiplicados por 2: ${numeros2}`)
-*/
+
 
 //Ejercicio 2
 let pares = [];
@@ -135,3 +135,34 @@ function mostrarAlerta() {
     const valor = textoInput.value;
     alert(`Has ingresado: ${valor}`)
 }
+*/
+
+//Eventos del DOM
+//Ejercicio 1
+document.addEventListener('DOMContentLoaded', () => {
+    const lista = document.getElementById('miLista');
+    const items = lista.querySelectorAll('li');
+
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            console.log(item.textContent);
+        });
+    });
+});
+
+//Ejercicio 2
+document.addEventListener('DOMContentLoaded', () => {
+    const input = document.getElementById('miInput');
+    const deshabilitarBtn = document.getElementById('deshabilitarBtn');
+    const habilitarBtn = document.getElementById('habilitarBtn');
+
+    // Función para deshabilitar el input
+    deshabilitarBtn.addEventListener('click', () => {
+        input.disabled = true;
+    });
+
+    // Función para habilitar el input
+    habilitarBtn.addEventListener('click', () => {
+        input.disabled = false;
+    });
+});
