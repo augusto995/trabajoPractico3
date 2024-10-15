@@ -5,12 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trabajo practico</title>
-    <script type="module" src="/main.js" defer></script>
+    <script type="text/javascript" src="/main.js"></script>
   </head>
   <body>
     <p>Este es el primer párrafo</p>
     <p>Este es el segundo párrafo</p>
     <p>Este es el tercer párrafo</p>
+
     <button onclick="cambiarColor()">Cambiar color a azul</button>
+
+    <form id="miFormulario">
+      <label for="text">Ingresa un texto</label>
+      <input type="text" id="texto">
+      <button type="button" onclick="mostrarAlerta()">Mostrar alerta</button>
+    </form>
   </body>
 </html>

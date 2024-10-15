@@ -120,3 +120,18 @@ for (let i = 1; i <= 20; i++) {
 }
 console.log(`Primeros 10 numeros pares: ${pares}`)
 
+//7 Introduccion al DOM
+//Ejercicio 1
+function cambiarColor(){
+    let parrafos = document.querySelectorAll('p')
+    parrafos.forEach(p => {
+        p.style.color = 'blue'
+    })
+}
+
+//Ejercicio 2
+function mostrarAlerta() {
+    const textoInput = document.getElementById('texto')
+    const valor = textoInput.value;
+    alert(`Has ingresado: ${valor}`)
+}
