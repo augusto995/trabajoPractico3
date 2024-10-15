@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
 
     <form id="miFormulario">
       <label for="text">Ingresa un texto</label>
-      <input type="text" id="texto">
+      <input type="text" id="texto" />
       <button type="button" onclick="mostrarAlerta()">Mostrar alerta</button>
     </form>
 
@@ -26,10 +26,22 @@
       <li>Elemento 3</li>
       <li>Elemento 4</li>
       <li>Elemento 5</li>
-  </ul>
+    </ul>
 
-  <input type="text" id="miInput" placeholder="Ingresa algo..." />
+    <input type="text" id="miInput" placeholder="Ingresa algo..." />
     <button id="deshabilitarBtn">Deshabilitar Input</button>
     <button id="habilitarBtn">Habilitar Input</button>
   </body>
+
+  <form id="form">
+    <p>Correo electronico:</p>
+    <input
+      type="email"
+      id="emailInput"
+      required
+    />
+    <button type="submit">Guardar Correo</button>
+  </form>
+  <div id="correoGuardado"></div>
+  <button id="eliminarBtn" style="display: none">Eliminar Correo</button>
 </html>

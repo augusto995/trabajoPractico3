@@ -166,3 +166,32 @@ document.addEventListener('DOMContentLoaded', () => {
         input.disabled = false;
     });
 });
+
+//Ejercicio Localstorage
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('form');
+    const emailInput = document.getElementById('emailInput');
+    const correoGuardadoDiv = document.getElementById('correoGuardado');
+    const eliminarBtn = document.getElementById('eliminarBtn');
+    const correoGuardado = localStorage.getItem('correo');
+
+    if (correoGuardado) {
+        correoGuardadoDiv.textContent = `Correo guardado: ${correoGuardado}`;
+        eliminarBtn.style.display = 'block'; 
+    }
+    
+    form.addEventListener('submit', (event) => {
+        event.preventDefault(); // 
+        const correo = emailInput.value;
+        localStorage.setItem('correo', correo); 
+        correoGuardadoDiv.textContent = `Correo guardado: ${correo}`;
+        eliminarBtn.style.display = 'block'; 
+        emailInput.value = ''; 
+    });
+
+    eliminarBtn.addEventListener('click', () => {
+        localStorage.removeItem('correo'); 
+        correoGuardadoDiv.textContent = ''; 
+        eliminarBtn.style.display = 'none'; 
+    });
+});
